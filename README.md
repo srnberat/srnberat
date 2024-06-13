@@ -1,6 +1,7 @@
 👋 Hi there! I'm Berat!
 
     🎓 First-year Computer Science student at Université du Littoral Côte d'Opale, Calais.
+
     🌍 Based in the charming town of Hazebrouck, France.
 
 🌟 Currently learning:
@@ -9,8 +10,6 @@
     • Java ☕
     • Web Development 🌐
 
-📚 Interested in:
+📫 Let's connect and collaborate!
 
-    • Artificial Intelligence 🤖
-    • Cybersecurity 🔒
-    • Game Development 🎮
+✨ Fun fact: I love playing video games during my free time!
