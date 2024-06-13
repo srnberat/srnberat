@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #32322C;
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top {
+    height: 80px;
+    background-color: #7B9E87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.hi {
+    font-style: italic;
+}
+
+header {
+    width: 100%;
+}
+
+.menu {
+    text-align: left;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ol li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.menu ol li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.menu ol li a:hover {
+    color: #32322C;
+}
+
+.middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.bottom {
+    background-color: #7B9E87;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+footer {
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px; /* Adjust the size of the icons */
+    height: 30px;
+    margin: 0 10px; /* Space between the icons */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
