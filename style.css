@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #32322C;
+    font-family: "Montserrat", sans-serif;
+    color: whitesmoke;
+}
+
+.top {
+    height: 12vh;
+    background-color: #7B9E87;
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+header {
+    width: 80%; /* Largeur du header ajustée */
+}
+
+.menu {
+    text-align: center; /* Centre les éléments de la liste */
+}
+
+.menu ol {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0;
+}
+
+.menu ol li {
+    display: inline-block; /* Affiche les éléments en ligne */
+    margin-right: 20px; /* Marge entre les éléments du menu */
+}
+
+.menu ol li a {
+    text-decoration: none; /* Supprime la soulignement des liens */
+    color: whitesmoke; /* Couleur du texte des liens */
+    font-weight: bold; /* Police en gras pour les liens */
+    font-size: 1.2rem; /* Taille de la police des liens */
+    transition: color 0.3s ease; /* Transition douce pour la couleur du texte */
+}
+
+.menu ol li a:hover {
+    color: #32322C; /* Couleur du texte des liens au survol */
+}
+
+h1.hi {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+p.pres {
+    margin-top: 20px;
+    width: 50%;
+    line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
+}
+
+h2.about {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
