@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/* Body */
+
 body {
     background-color: #32322C;
     font-family: "Montserrat", sans-serif;
@@ -13,6 +15,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Header */
 
 .wrapper {
     display: flex;
@@ -31,6 +35,10 @@ body {
 
 .hi {
     font-style: italic;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 700;
 }
 
 header {
@@ -72,22 +80,29 @@ header {
     display: flex;
     justify-content: center;
     padding: 20px;
+    width: 100%; /* Ensure middle takes full width */
 }
 
+/* Footer and icons */
 
 .bottom {
     background-color: #7B9E87;
-    text-align: center;
-    padding: 10px 0;
     margin-top: auto;
 }
 
 footer {
+    text-align: center;
+    padding: 10px;
     color: whitesmoke;
     font-size: 0.8rem;
+    position: relative;
 }
 
 .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
@@ -100,4 +115,30 @@ footer {
 
 .social-icon:hover {
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Accordion */
+
+.accordion {
+    width: 85rem;
+    font-size: 15px;
+    font-weight: 600;
+    color: #32322C;
+    background-color: #7B9E87;
+    border-radius: 10px;
+}
+
+.accordion-body{
+    text-align: justify;
+}
+
+h2.comp{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+p.comp{
+
+    font-weight: 600;
 }

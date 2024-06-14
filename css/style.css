@@ -124,8 +124,13 @@ footer {
 }
 
 .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
+
 
 .social-icon {
     width: 30px; /* Adjust the size of the icons */
