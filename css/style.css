@@ -95,20 +95,20 @@ h1.hi {
 
 h2.about {
     margin-left: 15px;
-    margin-top: 75px;
+    margin-top: 50px;
     margin-bottom: 10px; /* Adjust margin to reduce space between h2 and p */
 }
 
-p.pres {
+p.pres, p.pres2 {
     margin-left: 15px;
     margin-top: 0; /* Remove margin-top to be directly below h2 */
-    font-size: 1.3rem; /* Increase font size */
+    font-size: 1.1rem; /* Increase font size */
     line-height: 1.6;
     text-align: justify; /* Ensures text is justified */
     background: rgba(255, 255, 255, 0.1); /* Adds a subtle background */
-    padding: 15px;
-    border-radius: 10px; /* Adds rounded corners */
+    padding: 10px;
 }
+
 
 .bottom {
     background-color: #7B9E87;
@@ -141,4 +141,30 @@ footer {
 
 .social-icon:hover {
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.swipe-in {
+    animation: swipeIn 0.5s forwards;
+}
+
+.swipe-out {
+    animation: swipeOut 0.5s forwards;
+}
+
+@keyframes swipeIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes swipeOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }

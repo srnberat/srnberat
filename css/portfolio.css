@@ -12,8 +12,8 @@ body {
     background-color: #32322C;
     font-family: "Montserrat", sans-serif;
     color: whitesmoke;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -22,6 +22,15 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+}
+
+.wrapper.swipe-in {
+    animation: swipeIn 0.5s forwards;
+}
+
+.wrapper.swipe-out {
+    animation: swipeOut 0.5s forwards;
 }
 
 .top {
@@ -120,8 +129,10 @@ footer {
 /* Accordion */
 
 .accordion {
+    border: solid 2px whitesmoke;
+    text-align: center;
     width: 85rem;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 600;
     color: #32322C;
     background-color: #7B9E87;
@@ -130,10 +141,24 @@ footer {
 
 .accordion-body{
     text-align: justify;
+    font-size: 15px;
+}
+
+h1.c1, h1.c2 {
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+h2.sem1{
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 h2.comp{
-    color: whitesmoke;
+    margin-top: 15px;
+    color: #32322C;
     font-size: 20px;
     font-weight: 800;
 }
@@ -141,4 +166,42 @@ h2.comp{
 p.comp{
 
     font-weight: 600;
+}
+
+.collapsed {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+}
+
+[data-ui-tablist-tabpanel] {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+.swipe-in {
+    animation: swipeIn 0.5s forwards;
+}
+
+.swipe-out {
+    animation: swipeOut 0.5s forwards;
+}
+
+@keyframes swipeIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes swipeOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
