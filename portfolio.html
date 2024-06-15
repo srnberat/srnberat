@@ -6,37 +6,43 @@
     <title>srnberat - portfolio</title>
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="https://unpkg.com/jolty-ui/dist/jolty-ui.min.css">
+    <script type="module" src="js/accordion.js"></script>
+    <script src="js/swipe-transition.js"></script>
 </head>
-<body>
-
+<body class="initial-load">
     <div class="wrapper">
         <div class="top">
             <header>
                 <nav class="menu">
                     <ol>
                         <li><a href="index.html">Acceuil</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
                     </ol>
                 </nav>
             </header>
         </div>
-
         <div class="middle">
             <div class="content">
                 <h1 class="hi">Portfolio</h1>
                 <div data-ui-tablist class="accordion" data-ui-transition="collapse-fade">
                   <div class="accordion-item">
                     <button data-ui-tablist-tab class="accordion-header">C1-C2</button>
-                    <div data-ui-tablist-tabpanel>
+                    <div data-ui-tablist-tabpanel class="collapsed">
                       <div class="accordion-body">
+                        <h1 class="c1"> - Développer des applications informatiques simples</h1>
+                        <h1 class="c2"> - Appréhender et construire des algorithmes</h1>
                         <h2 class="comp">Compétences acquises :</h2>
-                        <p class="comp">test</p>
+                        <h2 class="sem1">Semestre 1 :</h2>
+                        <p class="comp"> - Initiation au développement (langage C)</p>
+                        <p class="comp"> - Développement d'interface web (HTML/CSS web statique)</p>
+                        <p class="comp"> - Anglais technique (CO/CE)</p>
+                        <p class="comp"> - Implémentation de besoin d'un client SAÉ (création de site web statique + jeu textuel en C)</p>
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <button data-ui-tablist-tab class="accordion-header">C3-C4</button>
-                    <div data-ui-tablist-tabpanel>
+                    <div data-ui-tablist-tabpanel class="collapsed">
                       <div class="accordion-body">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat.
@@ -45,7 +51,7 @@
                   </div>
                   <div class="accordion-item">
                     <button data-ui-tablist-tab class="accordion-header">C5-C6</button>
-                    <div data-ui-tablist-tabpanel>
+                    <div data-ui-tablist-tabpanel class="collapsed">
                       <div class="accordion-body">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat.
@@ -55,7 +61,6 @@
                 </div>
             </div>
         </div>
-
         <div class="bottom">
             <footer>
                 ©srnberat
@@ -70,11 +75,5 @@
             </footer>
         </div>
     </div>
-
-    <script type="module">
-        import { Tablist } from "https://cdn.jsdelivr.net/npm/jolty@0.6.1/dist/jolty.esm.min.js";
-        Tablist.initAll();
-    </script>
-
 </body>
 </html>
