@@ -1,5 +1,3 @@
-import { Tablist } from "https://cdn.jsdelivr.net/npm/jolty@0.6.1/dist/jolty.esm.min.js";
-
 document.addEventListener("DOMContentLoaded", () => {
     const accordions = document.querySelectorAll("[data-ui-tablist]");
 
